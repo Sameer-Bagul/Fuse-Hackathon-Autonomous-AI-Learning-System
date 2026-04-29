@@ -1,0 +1,25 @@
+Hello everyone! Welcome to Auto Learn. This project is an autonomous AI learning system — a self-improving tutor that generates curricula, adapts teaching strategies, and verifies answers in real time. We’ll begin the demo now. Starting the demo… now!
+
+Quick overview: this full-stack system combines a React dashboard, a FastAPI machine-learning backend, and a MongoDB datastore to run a self-improving AI tutor.
+
+Workflow: you submit one initial prompt. The system generates a curriculum, the PPO agent teaches, meta-learning adapts, and quality control reduces errors.
+
+Step one: submit the initial learning goal. The system waits for your first prompt — after that, the AI generates all subsequent prompts automatically.
+
+Watch: the loop starts, and iterations begin increasing in real time. The curriculum generator creates progressive tasks with difficulty levels. Tasks update based on student performance and mastery thresholds.
+
+At the core is Proximal Policy Optimization (PPO), which updates the teaching policy using rewards. A meta-learner observes strategy effectiveness and adapts teaching approaches automatically, improving with each iteration.
+
+Here are the live metrics: success rate, reward trends, and hallucination detection update in real time. As the system learns, success rates climb and hallucination rates fall!
+
+Built-in hallucination detection checks responses for factuality and confidence, flagging uncertain outputs and penalizing them during training.
+
+The system is autonomous — it self-generates prompts, self-evaluates, and continuously improves. Typical demonstrations show success rates rising substantially over 20–30 iterations.
+
+Progress, model checkpoints, and versions are saved to MongoDB. You can start, stop, save, or restore learning states from the dashboard.
+
+Tech stack: React and TypeScript for the UI, FastAPI and Python for the backend, PyTorch and NumPy for learning, and MongoDB for persistence.
+
+Here is our project certificate, or any awards or recognitions (if applicable). All code and documentation are on GitHub.
+
+Try the demo, read the docs, and contribute. Thank you! Goodbye — thank you!
