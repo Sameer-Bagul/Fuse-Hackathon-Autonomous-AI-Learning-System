@@ -18,7 +18,7 @@
 
 ## 📸 Project Media
 
-![App Screenshot](assets/screenshot.png)
+![Prototype Screenshot](fuse-hackathon.png)
 
 *(Add screenshots of the Learning Dashboard, Analytics metrics, and Hallucination Monitor here)*
 
