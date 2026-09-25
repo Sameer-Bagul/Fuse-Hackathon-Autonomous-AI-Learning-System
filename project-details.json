@@ -1,0 +1,79 @@
+{
+  "_id": "portfolio-fuse-hackathon",
+  "title": "Fuse Hackathon - Autonomous AI Learning System",
+  "slug": "fuse-hackathon",
+  "shortDescription": "A self-improving, autonomous educational AI platform powered by Reinforcement Learning (PPO), Meta-Learning, and dynamic Curriculum Generation.",
+  "description": "An autonomous educational AI platform that utilizes a decoupled MLOps pipeline. It features a Proximal Policy Optimization (PPO) agent to continuously optimize teaching strategies based on student feedback, autonomous curriculum generation, multi-layer hallucination detection, and a meta-learning engine to discover effective education principles.",
+  "category": "ai",
+  "isFeatured": true,
+  "status": "Completed",
+  "role": "AI / Full Stack Engineer",
+  "clientOrCompany": "Hackathon Project",
+  "duration": "Hackathon",
+  "targetAudience": "Students, Educators, EdTech Platforms",
+  "techStackBreakdown": {
+    "frontend": [
+      "React 18",
+      "Node.js"
+    ],
+    "backend": [
+      "Python 3.10+",
+      "FastAPI",
+      "PyTorch"
+    ],
+    "infrastructure": [
+      "MongoDB Atlas",
+      "MLOps Pipeline"
+    ]
+  },
+  "myContributions": [
+    "Implemented a Proximal Policy Optimization (PPO) Agent with an Actor-Critic neural network architecture for continuous learning.",
+    "Developed an Autonomous Curriculum Generator to build structured, personalized learning paths from single prompts.",
+    "Built a Multi-Layer Hallucination Detection system to ensure factual accuracy via semantic consistency checks.",
+    "Created a Meta-Learning Engine to analyze cross-session patterns and update global teaching policies.",
+    "Engineered a high-performance FastAPI backend capable of sub-2-second response generation and integrated a real-time analytics React dashboard."
+  ],
+  "image": "https://raw.githubusercontent.com/Sameer-Bagul/fuse-hackathon/main/fuse-hackathon.png",
+  "gallery": [
+    {
+      "url": "https://raw.githubusercontent.com/Sameer-Bagul/fuse-hackathon/main/fuse-hackathon.png",
+      "caption": "Prototype Screenshot"
+    }
+  ],
+  "architectureDiagram": "graph TD\n    Client[React Frontend]\n    \n    subgraph FastAPI Backend\n        API[API Router]\n        DB[(MongoDB Atlas)]\n        \n        subgraph MLOps Pipeline\n            CG[Curriculum Generator]\n            PPO[PPO Agent Actor/Critic]\n            HD[Hallucination Detection]\n            FB[Feedback Collection]\n            RC[Reward Calculation]\n            ML[Meta-Learning Engine]\n        end\n    end\n\n    Client -->|1. Initial Prompt| API\n    API -->|2. Store History| DB\n    API -->|3. Trigger| CG\n    \n    CG -->|Generates Path| PPO\n    PPO -->|Selects Teaching Strategy| HD\n    HD -->|Verifies Content| API\n    API -->|Delivers Content| Client\n    \n    Client -->|User Interaction/Questions| FB\n    FB -->|Metrics| RC\n    RC -->|Reward Signal| PPO\n    \n    FB -->|Cross-Session Patterns| ML\n    ML -->|Updates Global Policy| PPO",
+  "liveUrl": "",
+  "githubUrl": "https://github.com/Sameer-Bagul/fuse-hackathon",
+  "apiDocsUrl": "",
+  "contributors": [
+    "Sameer Bagul"
+  ],
+  "features": [
+    "Proximal Policy Optimization (PPO): Utilizes an Actor-Critic neural network architecture to continuously optimize teaching strategies based on student feedback.",
+    "Autonomous Curriculum Generation: Instantly builds structured, personalized learning paths from a single initial prompt.",
+    "Multi-Layer Hallucination Detection: Ensures 98%+ factual accuracy via semantic consistency checks and confidence scoring.",
+    "Meta-Learning Engine: Analyzes cross-session patterns to discover and implement fundamental principles of effective education.",
+    "Real-Time Analytics Dashboard: React-based interface to monitor success rates, iterations, AI rewards, and hallucination metrics in real-time.",
+    "High-Performance API: Python FastAPI backend capable of handling sub-2-second response generations."
+  ],
+  "challenges": [
+    "Implementing a decoupled MLOps pipeline separating user-facing application from the reinforcement learning loop and model state management.",
+    "Balancing the PPO Agent's Reward Calculation Engine to accurately weight student progression, engagement, and penalties for confusion or hallucinations.",
+    "Ensuring sub-2-second response generations while running complex multi-layer hallucination detection and meta-learning models."
+  ],
+  "learnings": [
+    "Gained practical experience integrating Reinforcement Learning (PPO) with web application backends via FastAPI.",
+    "Mastered designing MLOps pipelines and decoupling AI model loops from user-facing systems.",
+    "Learned advanced techniques for real-time hallucination detection and prompt verification."
+  ],
+  "metrics": [
+    "Achieved 98%+ factual accuracy using semantic consistency checks and confidence scoring.",
+    "Optimized Python FastAPI backend to handle sub-2-second response generations."
+  ],
+  "clientTestimonial": {},
+  "relatedBlogs": [],
+  "futureRoadmap": [
+    "Deploy the complete pipeline to a scalable cloud infrastructure (AWS/GCP).",
+    "Expand the Curriculum Generator to support complex, multi-disciplinary subjects.",
+    "Integrate advanced multimodal learning models to support video and interactive code teaching strategies."
+  ]
+}
